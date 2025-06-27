@@ -8,6 +8,5 @@ router.use(protect);
 router.post('/', placeOrder);
 router.get('/my', getMyOrders);
 router.get('/all', adminOnly, getAllOrders);
-router.get('/:id/invoice', protect, generateInvoice);
 
 module.exports = router;
